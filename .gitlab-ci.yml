@@ -2,6 +2,7 @@ image: sphinxdoc/sphinx:4.5.0
 
 stages:
   - build
+  - deploy
 
 Build:
   stage: build
@@ -12,4 +13,12 @@ Build:
     expire_in: 1 day
   script:
     - make html
+
+Deploy at doc.proxyos.dev:
+  stage: deploy
+  dependencies: ['Build']
+  tags: ['proxyos-server']
+  script: deploy-site doc.proxyos.dev build/html
+  only:
+    - master
 
