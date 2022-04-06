@@ -1,0 +1,15 @@
+image: sphinxdoc/sphinx:4.5.0
+
+stages:
+  - build
+
+Build:
+  stage: build
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_JOB_NAME-$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - "build/html/*"
+    expire_in: 1 day
+  script:
+    - make html
+
