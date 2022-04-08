@@ -5,6 +5,7 @@ The main goal of the project is to provide a **simple** and **small-sized** arch
 to :important:`control embedded peripherals from a master computer`.
 
 .. graphviz::
+  :align: center
 
   graph abstract {
     {
@@ -13,7 +14,7 @@ to :important:`control embedded peripherals from a master computer`.
     }
 
     computer -- board
-    board -- { servo led "proxymity\nsensor" "bipolar\nstepper" "..." }
+    board -- { servo led "proximity\nsensor" "bipolar\nstepper" "..." }
   }
 
 The **simple** and **small-sized** adjectives are capital, because it should be easy for a single
