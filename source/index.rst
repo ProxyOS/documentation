@@ -5,6 +5,7 @@ ProxyOS documentation
    :maxdepth: 2
 
    goals
+   architecture
 
 
 Indices and tables
