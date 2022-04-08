@@ -1,3 +1,30 @@
+:root {
+  --navigation-width: 240px;
+  --body-max-width: 800px;
+}
+
+body {
+  max-width: fit-content;
+  margin: auto;
+}
+
+div.sphinxsidebar {
+  width: var(--navigation-width);
+}
+
+div.document {
+  max-width: calc(var(--body-max-width) + var(--navigation-width));
+}
+
+div.body {
+  margin: auto;
+  max-width: var(--body-max-width);
+}
+
+div.bodywrapper {
+  margin: 0 0 0 calc(var(--navigation-width) + 30px);
+}
+
 .proxyos-important {
   font-weight: 900;
   font-style: italic;
