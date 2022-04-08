@@ -34,6 +34,8 @@ release = '1.0'
 extensions = [
   'proxyos_roles',
   'proxyos_theme',
+
+  'sphinx.ext.graphviz',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

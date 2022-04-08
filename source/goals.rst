@@ -4,6 +4,18 @@ Goals
 The main goal of the project is to provide a **simple** and **small-sized** architecture allowing
 to :important:`control embedded peripherals from a master computer`.
 
+.. graphviz::
+
+  graph abstract {
+    {
+      computer [ shape=component ]
+      board [ shape=box ]
+    }
+
+    computer -- board
+    board -- { servo led "proxymity\nsensor" "bipolar\nstepper" "..." }
+  }
+
 The **simple** and **small-sized** adjectives are capital, because it should be easy for a single
 experienced person to port the whole set in few days to a new MCU (for the embedded part) or
 OS (for the master part).
