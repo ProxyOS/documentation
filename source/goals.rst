@@ -8,13 +8,88 @@ to :important:`control embedded peripherals from a master computer`.
   :align: center
 
   graph abstract {
-    {
-      computer [ shape=component ]
-      board [ shape=box ]
+    rankdir="LR"
+
+    subgraph Computer {
+      rank=same
+      node [ shape=component ]
+      pc [label="computer"]
     }
 
-    computer -- board
-    board -- { servo led "proximity\nsensor" "bipolar\nstepper" "..." }
+    subgraph Gateway {
+      rank=same
+      node [ shape=box ]
+      g1 [label="gateway1"]
+      gx [label="gateway..."]
+      gn [label="gatewayN"]
+    }
+
+    subgraph Peripheral {
+      rank=same
+      node [ shape=octagon ]
+
+      p1   [label="peripheral1"]
+      p2   [label="peripheral2"]
+      p3   [label="peripheral3"]
+      p4   [label="peripheral4"]
+      p5   [label="peripheral5"]
+      px   [label="peripheral..."]
+      pn_1 [label="peripheralN-1"]
+      pn   [label="peripheralN"]
+    }
+
+    pc -- { g1 gx gn }
+
+    g1 -- { p1 p2 p3 }
+    gx -- { p4 p5 }
+    gn -- { px pn_1 pn }
+  }
+
+This mean that you should be able to drive a bunch of peripheral with your computer that it
+cannot handle natively via its ports, using some gateways which are simply microcontroller connected
+to your computer. A practical example could be:
+
+.. graphviz::
+  :align: center
+
+  graph abstract {
+    rankdir="LR"
+
+    subgraph Computer {
+      rank=same
+      node [ shape=component ]
+      pc [label="Laptop"]
+    }
+
+    subgraph Gateway {
+      rank=same
+      node [ shape=box ]
+      g1 [label="Arduino Uno"]
+      gx [label="Nucleo H7A3ZI"]
+      gn [label="ESP32 S3"]
+    }
+
+    subgraph Peripheral {
+      rank=same
+      node [ shape=octagon ]
+
+      p1   [label="LED"]
+      p2   [label="Servo1"]
+      p3   [label="Servo2"]
+      p4   [label="Proximity\nSensor"]
+      p5   [label="Relay"]
+      px   [label="Bipolar\nStepper"]
+      pn_1 [label="Robot\nArm"]
+      pn   [label="IR\nReceiver"]
+    }
+
+    pc -- g1 [label="UART"]
+    pc -- gx [label="Eth/TCP"]
+    pc -- gn [taillabel="Wifi/TCP", labeldistance=8]
+
+    g1 -- { p1 p2 p3 }
+    gx -- { p4 p5 }
+    gn -- { px pn_1 pn }
   }
 
 The **simple** and **small-sized** adjectives are capital, because it should be easy for a single
@@ -44,7 +119,7 @@ several levels of usage and a not too high difference of altitude between each o
 * **Level 1** I never used a microcontroller but I have some notion about programming. I'd like
   to use one to do simple stuff, like in Arduino project, and it should not be painful to set it up.
 * **Level 2** I'd like to port a new peripheral to the system. I want more that using high level API and I begin
-  to get interest in what happen in the backstage.
+  to get interest in what happens in the backstage.
 * **Level 3** I'd like to port the project to an existing board. I understand better what's under the hood, and now
   I'd like to eat something more spicy.
 * **Level 4** I'd like to create a custom board because my needs are not fulfilled with any existing one and then
