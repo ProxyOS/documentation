@@ -10,6 +10,7 @@ to :important:`control embedded peripherals from a master computer`.
   graph abstract {
     rankdir="LR"
     node [ fontname="Lucida Grande" ]
+    edge [ fontname="Lucida Grande" ]
 
     subgraph Computer {
       rank=same
@@ -56,6 +57,7 @@ to your computer. A practical example could be:
   graph abstract {
     rankdir="LR"
     node [ fontname="Lucida Grande" ]
+    edge [ fontname="Lucida Grande" ]
 
     subgraph Computer {
       rank=same
