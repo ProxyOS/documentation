@@ -13,30 +13,32 @@ For simplicity, only bidirectionnal channel with both ends initiatives will be c
 
 Example of channels to be considered:
 
-* UART
-* WiFi/Ethernet/IP:
+* `UART <https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter>`_
+* `WiFi <https://en.wikipedia.org/wiki/Wi-Fi>`_/`Ethernet <https://en.wikipedia.org/wiki/Ethernet>`_/`IP <https://en.wikipedia.org/wiki/Internet_Protocol>`_:
 
-  * TCP
-  * SSL/TCP
-  * UDP
+  * `TCP <https://en.wikipedia.org/wiki/Transmission_Control_Protocol>`_
+    (with eventually `SSL/TLS <https://en.wikipedia.org/wiki/Transport_Layer_Security>`_)
+  * `UDP <https://en.wikipedia.org/wiki/User_Datagram_Protocol>`_
 
-* Bluetooth/BLE
-* USB
-* Zigbee
-* LoRa
-* CAN
+* `Bluetooth <https://en.wikipedia.org/wiki/Bluetooth>`_/`BLE <https://en.wikipedia.org/wiki/Bluetooth_Low_Energy>`_/`BLE Mesh <https://en.wikipedia.org/wiki/Bluetooth_mesh_networking>`_
+* `USB <https://en.wikipedia.org/wiki/USB>`_
+* `Zigbee <https://en.wikipedia.org/wiki/Zigbee>`_
+* `LoRa <https://en.wikipedia.org/wiki/LoRa>`_
+* `CAN <https://en.wikipedia.org/wiki/CAN_bus>`_
 * ...
 
 Example of channels not to be considered:
 
-* SPI (master only initiative)
-* I²C (master only initiative)
-* 1-Wire (master only initiative)
+* `SPI <https://en.wikipedia.org/wiki/Serial_Peripheral_Interface>`_ (master only initiative)
+* `I²C <https://en.wikipedia.org/wiki/I%C2%B2C>`_ (master only initiative)
+* `1-Wire <https://en.wikipedia.org/wiki/1-Wire>`_ (master only initiative)
 * ...
 
 In the first version of the architecture, we will consider channels as perfect: no data loss and no
-data corruption. `ECC <https://en.wikipedia.org/wiki/Error_correction_code>`_ and acknoledgement
-mechanisms might be considered in next versions.
+data corruption. `ECC <https://en.wikipedia.org/wiki/Error_correction_code>`_ and
+`acknoledgement <https://en.wikipedia.org/wiki/Acknowledgement_(data_networks)>`_
+mechanisms might be considered in next versions. Moreover, some channels mentionned above already
+implement these mechanisms.
 
 Messaging protocol
 ------------------
@@ -54,7 +56,8 @@ When considering messaging protocol, there is several questions to answer:
 
 .. todo:: Short explanation about common formats from
           `that list <https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats>`_
-          and why a zero copy version of BSON as been implemented in C.
+          and why a zero copy version of `BSON <https://en.wikipedia.org/wiki/BSON>`_ as been
+          implemented in C.
 
 Gateway Manager
 ---------------
