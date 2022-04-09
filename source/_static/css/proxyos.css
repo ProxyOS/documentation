@@ -47,6 +47,15 @@ div.body {
   max-width: var(--body-max-width);
 }
 
+div.body a {
+  text-decoration: none;
+}
+
+div.body a:hover {
+  text-decoration: underline;
+}
+
+
 div.bodywrapper {
   margin: 0 0 0 calc(var(--navigation-width) + 30px);
 }
@@ -59,4 +68,9 @@ p.logo {
 .proxyos-important {
   font-weight: 900;
   font-style: italic;
+}
+
+div.body a.proxyos-repository {
+  font-weight: 900;
+  color: var(--primary-color);
 }
