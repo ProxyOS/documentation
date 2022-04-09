@@ -2,9 +2,13 @@ ProxyOS documentation
 =====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
+   :numbered:
+   :caption: Table of Contents
 
    goals
+   contribute
+   timeline
    architecture
 
 
