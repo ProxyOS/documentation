@@ -9,7 +9,7 @@ The both will communicate together via some **channels** using a **messaging pro
 Channels
 --------
 
-For simplicity, only bidirectionnal channel with both ends initiatives will be considered at first glance.
+For simplicity, only bidirectionnal channels with both ends initiatives will be considered at first glance.
 
 Example of channels to be considered:
 
@@ -51,7 +51,7 @@ When considering messaging protocol, there is several questions to answer:
 1. How do I know the beginning and the end of my message?
 2. How do I know which type of message did I receive?
 3. How do I parse the message, knowing it's type?
-   How much does it cost in term memory and time?
+   How much does it cost in term of memory and computation time?
 4. What's the information quantity/message size ratio?
 
 .. todo:: Short explanation about common formats from
