@@ -2,7 +2,7 @@ Architecture
 ============
 
 There will be obviously a software running on the computer, let's call it the
-:repository:`GatewayManager <GatewayManager>` from now
+:repository:`GatewayManager <gateway-manager>` from now
 and a software running on the gateways, let's call it the
 :repository:`Kernel <kernel>` from now.
 
