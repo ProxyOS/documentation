@@ -1,8 +1,10 @@
 Architecture
 ============
 
-There will be obviously a software running on the computer, let's call it the **GatewayManager** from now
-and a software running on the gateways, let's call it the **Kernel** from now.
+There will be obviously a software running on the computer, let's call it the
+:repository:`GatewayManager <GatewayManager>` from now
+and a software running on the gateways, let's call it the
+:repository:`Kernel <kernel>` from now.
 
 The both will communicate together via some **channels** using a **messaging protocol**.
 
