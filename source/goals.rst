@@ -45,8 +45,8 @@ to :important:`control embedded peripherals from a master computer`.
     gn -- { px pn_1 pn }
   }
 
-This mean that you should be able to drive a bunch of peripheral with your computer that it
-cannot handle natively via its ports, using some gateways which are simply microcontroller connected
+This mean that you should be able to drive a bunch of peripherals with your computer (that it
+cannot natively handle via its ports), using some gateways (which are simply microcontrollers) connected
 to your computer. A practical example could be:
 
 .. graphviz::
