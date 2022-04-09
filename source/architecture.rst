@@ -52,3 +52,23 @@ When considering messaging protocol, there is several questions to answer:
    How much does it cost in term memory and time?
 4. What's the information quantity/message size ratio?
 
+.. todo:: Short explanation about common formats from
+          `that list <https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats>`_
+          and why a zero copy version of BSON as been implemented in C.
+
+Gateway Manager
+---------------
+
+.. todo:: List common actions that should be available
+
+.. todo:: Explain peripheral proxy interface declaration
+
+Kernel
+------
+
+.. todo:: Explain peripheral driving principle
+
+.. todo:: Explain project architecture and build system policy
+
+.. todo:: Explain the different cases: general purpose board vs dedicated purpose board. Show the interest
+          of using device tree in some cases => Level1
