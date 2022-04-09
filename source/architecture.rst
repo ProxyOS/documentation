@@ -13,6 +13,8 @@ Channels
 
 For simplicity, only bidirectionnal channels with both ends initiatives will be considered at first glance.
 
+.. index:: Channel example lists
+
 Example of channels to be considered:
 
 * `UART <https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter>`_
@@ -55,6 +57,9 @@ When considering messaging protocol, there is several questions to answer:
 3. How do I parse the message, knowing it's type?
    How much does it cost in term of memory and computation time?
 4. What's the information quantity/message size ratio?
+
+.. index:: BSON
+.. index:: Messaging
 
 .. todo:: Short explanation about common formats from
           `that list <https://en.wikipedia.org/wiki/Comparison_of_data-serialization_formats>`_

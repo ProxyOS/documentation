@@ -4,6 +4,8 @@ Goals
 The main goal of the project is to provide a **simple** and **small-sized** architecture allowing
 to :important:`control embedded peripherals from a master computer`.
 
+.. index:: Network abstract description
+
 .. graphviz::
   :align: center
 
@@ -50,6 +52,8 @@ to :important:`control embedded peripherals from a master computer`.
 This mean that you should be able to drive a bunch of peripherals with your computer (that it
 cannot natively handle via its ports), using some gateways (which are simply microcontrollers) connected
 to your computer. A practical example could be:
+
+.. index:: Network practical example
 
 .. graphviz::
   :align: center
@@ -119,6 +123,8 @@ you designed?
 I'd like this project to have these intermediate steps. It should create a path for people who want to reach
 an experienced level in the embedded system world, by not only giving tools and software, but also giving
 several levels of usage and a not too high difference of altitude between each one of them:
+
+.. index:: User levels
 
 * **Level 1** I never used a microcontroller but I have some notion about programming. I'd like
   to use one to do simple stuff, like in Arduino project, and it should not be painful to set it up.
