@@ -60,4 +60,6 @@ html_theme = 'bizstyle'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_logo = "_static/img/logo.png"
+
 todo_include_todos = True
