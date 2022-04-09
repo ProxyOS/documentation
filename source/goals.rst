@@ -9,16 +9,17 @@ to :important:`control embedded peripherals from a master computer`.
 
   graph abstract {
     rankdir="LR"
+    node [ fontname="Lucida Grande" ]
 
     subgraph Computer {
       rank=same
-      node [ shape=component ]
+      node [ shape=component, style=filled, fillcolor="#f97c7c" ]
       pc [label="computer"]
     }
 
     subgraph Gateway {
       rank=same
-      node [ shape=box ]
+      node [ shape=box, style=filled, fillcolor="#82bcf2" ]
       g1 [label="gateway1"]
       gx [label="gateway..."]
       gn [label="gatewayN"]
@@ -26,7 +27,7 @@ to :important:`control embedded peripherals from a master computer`.
 
     subgraph Peripheral {
       rank=same
-      node [ shape=octagon ]
+      node [ shape=octagon, style=filled, fillcolor="#81e896" ]
 
       p1   [label="peripheral1"]
       p2   [label="peripheral2"]
@@ -54,16 +55,17 @@ to your computer. A practical example could be:
 
   graph abstract {
     rankdir="LR"
+    node [ fontname="Lucida Grande" ]
 
     subgraph Computer {
       rank=same
-      node [ shape=component ]
+      node [ shape=component, style=filled, fillcolor="#f97c7c" ]
       pc [label="Laptop"]
     }
 
     subgraph Gateway {
       rank=same
-      node [ shape=box ]
+      node [ shape=box, style=filled, fillcolor="#82bcf2" ]
       g1 [label="Arduino Uno"]
       gx [label="Nucleo H7A3ZI"]
       gn [label="ESP32 S3"]
@@ -71,7 +73,7 @@ to your computer. A practical example could be:
 
     subgraph Peripheral {
       rank=same
-      node [ shape=octagon ]
+      node [ shape=octagon, style=filled, fillcolor="#81e896" ]
 
       p1   [label="LED"]
       p2   [label="Servo1"]
@@ -85,7 +87,7 @@ to your computer. A practical example could be:
 
     pc -- g1 [label="UART"]
     pc -- gx [label="Eth/TCP"]
-    pc -- gn [taillabel="Wifi/TCP", labeldistance=8]
+    pc -- gn [taillabel="WiFi/TCP", labeldistance=8]
 
     g1 -- { p1 p2 p3 }
     gx -- { p4 p5 }

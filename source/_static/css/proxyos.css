@@ -1,11 +1,37 @@
 :root {
   --navigation-width: 240px;
   --body-max-width: 800px;
+  --neutral-color:  black;
+  --primary-color: #42BF5D;
+  --secondary-color: #336699;
 }
 
 body {
   max-width: fit-content;
   margin: auto;
+  border-right: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+}
+
+div.related ul,
+div.sphinxsidebar h1,
+div.sphinxsidebar h2,
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+h2, div.footer {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+h1, h2, h3, a, a:hover, div.footer a, div.footer {
+  color: var(--neutral-color);
+}
+
+div.admonition p.admonition-title {
+  background-color: var(--primary-color);
 }
 
 div.sphinxsidebar {
