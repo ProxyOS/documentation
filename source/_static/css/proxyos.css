@@ -72,7 +72,12 @@ p.logo {
   font-style: italic;
 }
 
-div.body a.proxyos-repository {
+div.body a.proxyos-repository,
+div.body a.proxyos-repofile {
   font-weight: 900;
   color: var(--primary-color);
+}
+
+table.align-center {
+  margin: auto;
 }

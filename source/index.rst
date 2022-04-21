@@ -14,7 +14,7 @@ ProxyOS documentation
    setup
    boards
    languages
-
+   study_case
 
 Indices and tables
 ==================
