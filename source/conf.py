@@ -35,6 +35,7 @@ extensions = [
   'proxyos_roles',
   'proxyos_theme',
 
+  'sphinx.ext.autosectionlabel',
   'sphinx.ext.graphviz',
   'sphinx.ext.todo',
 ]
@@ -63,3 +64,5 @@ html_static_path = ['_static']
 html_logo = "_static/img/logo.png"
 
 todo_include_todos = True
+
+autosectionlabel_prefix_document = True
