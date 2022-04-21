@@ -10,6 +10,7 @@ ProxyOS documentation
    contribute
    timeline
    architecture
+   repositories
    setup
    boards
    languages
