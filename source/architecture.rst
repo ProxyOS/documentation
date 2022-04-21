@@ -78,6 +78,8 @@ Kernel
 
 .. todo:: Explain peripheral driving principle
 
+.. index:: Build system (gateway)
+
 .. todo:: Explain project architecture and build system policy
 
 .. todo:: Explain the different cases: general purpose board vs dedicated purpose board. Show the interest
