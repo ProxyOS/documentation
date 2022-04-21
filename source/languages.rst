@@ -11,7 +11,7 @@ Only pure C match all this requirement, even C++ is not always supported on each
 ----------------------------------------------
 
 For simplicity and avoid to much work when a new peripheral will be ported to the project,
-core will be coded in C++ and automatic an binder for other languages will be develop for
+core will be coded in C++ and automatic an binder for other languages will be developped for
 supported languages. This will ensure coherent API between the different ports of each language.
 
 .. index:: Language automatic binding
