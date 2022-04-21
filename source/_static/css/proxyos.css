@@ -49,6 +49,8 @@ div.body {
 
 div.body a {
   text-decoration: none;
+  font-weight: 900;
+  color: var(--secondary-color);
 }
 
 div.body a:hover {
